@@ -1,4 +1,4 @@
-// SearchContext.tsx
+
 "use client";
 
 import { createContext, useState, useContext, ReactNode } from "react";
