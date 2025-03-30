@@ -21,7 +21,7 @@ type TableRow = {
 const Table = ({ data }: { data: TableRow[] }) => {
   return (
     <div className="md:w-full md:max-w-[1400px] sm: w-[300px] md:mx-auto md:p-4 sm: p-0 rounded-lg ">
-      {/* Table */}
+   
       <table className="md:w-full sm: w-screen ">
         <thead>
           <tr className="border-b-[1.5px] border-[#E7E6E6] ">
