@@ -30,7 +30,7 @@ export default function Home() {
         url: currentUrl,
       });
     } else {
-      setIsDropdownOpen(!isDropdownOpen); // Fallback to custom dropdown
+      setIsDropdownOpen(!isDropdownOpen); 
     }
   };
   const [activeFilter, setActiveFilter] = useState<string>("All");
@@ -106,7 +106,7 @@ export default function Home() {
 
         let filtered = mockData;
 
-        // Apply text search from search bar if query exists
+        
         if (searchQuery) {
             const lowerCaseQuery = searchQuery.toLowerCase();
             filtered = filtered.filter((row) =>
@@ -117,7 +117,7 @@ export default function Home() {
             );
         }
 
-        // Apply OwnerSearch filter if owners are selected
+      
         if (selectedOwners.length > 0) {
             const ownerNames = selectedOwners.map(owner => owner.name.toLowerCase());
             filtered = filtered.filter(row => 
@@ -176,7 +176,7 @@ export default function Home() {
         <IoShareSocialOutline className="w-[20px] h-[20px]" />
       </button>
 
-      {/* Custom Dropdown (Fallback) */}
+    
       {isDropdownOpen && (
         <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10 border border-gray-200">
           <div className="p-2 flex flex-col space-y-2">
