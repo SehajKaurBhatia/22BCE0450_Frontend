@@ -11,7 +11,7 @@ const OwnerSearch = ({ onSelectionChange }: { onSelectionChange: (items: SearchI
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedItems, setSelectedItems] = useState<SearchItem[]>([]);
 
-  // Simplified mock data - just what's needed for search
+  
   const tabData = {
     Owners: [
       { id: 1, name: 'Tesla, Inc.' },
@@ -48,7 +48,7 @@ const OwnerSearch = ({ onSelectionChange }: { onSelectionChange: (items: SearchI
   return (
    
       <div className="flex flex-col gap-3 max-h-[256px]">
-        {/* Tab headers */}
+      
         <div className="flex gap-4 text-sm ">
           {(['Owners', 'Law Firms', 'Attorneys'] as const).map((tab) => (
             <button
@@ -66,7 +66,7 @@ const OwnerSearch = ({ onSelectionChange }: { onSelectionChange: (items: SearchI
           ))}
         </div>
 
-        {/* Search box */}
+     
         <div className="relative">
           <input
             type="text"
@@ -82,7 +82,7 @@ const OwnerSearch = ({ onSelectionChange }: { onSelectionChange: (items: SearchI
           />
         </div>
 
-        {/* Results list */}
+      
         <div className="max-h-[140px] overflow-y-auto mt-1  space-y-2 pr-2">
           {filteredItems.length > 0 ? (
             filteredItems.map((item) => (
