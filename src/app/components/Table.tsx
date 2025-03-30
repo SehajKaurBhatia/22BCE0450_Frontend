@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { IoShareSocialOutline } from "react-icons/io5";
-import { useState } from "react";
+
 
 
 type TableRow = {
